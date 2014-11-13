@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CoDev</title>
+		<style type="text/css">
+			/*
+				En CSS los comentarios se hacen con slash + arterisco - asterisco + slash
+
+				La etiqueta imagen: Necesita una fuente (src) donde se le pasa como valor un archivo con extensión .jpg, .png, entre otras. Con el atributo title le especificamos un titulo cuando pasamos el mouse sobre la imagen.
+
+				La etiqueta header: Es la cabecera del archivo, en la que podemos incluir el título con h1 y utilizar imagenes, incluso podemos trabajar con la etiqueta nav.
+
+				La etiqueta br nos permite hacer saltos de linea.
+
+				La etiqueta style nos permite definir estilos en nuestro documento.
+			*/
+
+			body{									/*Inicio del bloque body*/
+				background: #ccc;					/*Especificamos un color de fondo*/	
+				color: red;							/*Especificamos un color de letra*/
+				font-size: 22px;					/*Tamaño de letra*/
+			}
+			h1{
+				text-align: center;					/*Centramos el texto que esta dentro de h1*/
+			}
+			.secundario{							/*Inicio del bloque con clase secundario*/
+				background: #012345;				/*Especificamos un color de fondo*/
+				height: 100px;						/*Indicamos un alto*/
+				width: 100px;						/*Indicamos un ancho*/
+			}
+			#principal{								/*Inicio del bloque con el identificador principal*/
+				background: #ca3536;				/*Especificamos un color de fondo*/	
+				height: 250px;						/*Indicamos un alto*/
+				width: 250px;						/*Indicamos un ancho*/
+			}
+		</style>
+	</head>
+	<body>
+		<header>											<!--Inicio de la cabecera del archivo HTML-->
+			<h1>Mi primera página</h1>	
+			<img src="fuente.jpg" title="Titulo">			
+			<h5>En la fuente del img introduce la ruta de la imagen.</h5>
+		</header>											<!--Fin de la cabecera-->	
+		<select>											<!--Trabaja como un combobox-->
+			<option>Primera</option>						<!--Opciones del combobox-->
+			<option>Segunda</option>
+			<option>Tercera</option>
+		</select>											<!--Fin de la etiqueta select-->
+			<br>
+			<br>		
+		<form action="">		
+			<h2>Esto es un formulario</h2>							
+			<input type="text">								<!--Caja de texto-->
+			<br>
+			<br>
+			<input type="email">							<!--Caja que solo permite email's-->
+			<br>
+			<br>
+			<input type="search">							<!--Caja de busqueda-->
+			<br>
+			<br>
+			<input type="date">								<!--Caja que especifica la fecha-->
+			<br>
+			<br>
+			<input type="submit">							<!--Enviamos los datos del formulario-->
+			<br>
+			<label>Click en el boton para ver los resultados de validación de correo.</label>
+		</form>
+		<section id="principal">
+			<article class="secundario">
+				
+			</article>
+		</section>
+			<article class="secundario">
+				
+			</article>
+	</body>
+	</html>	
+
