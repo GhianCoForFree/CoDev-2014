@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background: #fac464; /*Color de fondo del Documento*/
+		}
+		.principal{
+			background: #ff1010; /*Colo de fondo del círculoa*/
+			border-radius: 100%; /*Bordes redondeados al 100%*/
+			position: absolute;  /*Posición independiente de los otros elementos*/
+			margin: auto;        /*Margenes todos centrando el círculo*/
+			top:0;				 /*Superior en 0*/
+			bottom: 0;			 /*Inferior en 0*/
+			left: 0;			 /*Izquierda en 0*/
+			right: 0;			 /*Derecha en 0*/
+			height: 300px;		 /*Altura en 300px*/
+			width: 300px;		 /*Anchura en 300px*/
+			transition: all 1s ease; /*Transición que se aplica a todo y dura 1 segundo. con respecto al evento hover del círculo*/
+		}
+		.principal:hover{		/*Evento mouse sobre el círculo*/
+			background: #10ff90; /*Color de fondo  que cambia al pasar el mouse*/
+		}
+		.uno,.dos{				 /*Asigando a ambas clases las mismas propiedades*/
+			border-radius: 50px; 
+			position: absolute;
+			margin: auto;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: white;
+			height: 17px;
+			width: 170px;
+			transition:all .5s ease;
+		}
+		.uno{
+			transform:rotate(-45deg); /*Transformación: Rotación en -45 grados*/
+		}
+		.dos{
+			transform:rotate(45deg); /*Transformación: Rotación en 45 grados */
+		}
+		.principal:hover > .uno{     /*Aplicando herencia de elementos*/
+			left: 60px;
+			transform:rotate(125deg);
+
+		}
+		.principal:hover > .dos{
+			top: 80px;
+			right: 75px;
+			width: 80px;
+			transform:rotate(225deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="principal">
+		<div class="uno"></div>
+		<div class="dos"></div>
+	</div>
+</body>
+</html>
